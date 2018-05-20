@@ -4,7 +4,8 @@ class Course extends Component {
     render() {
         return(
             <div>
-                Hello My Course
+                {this.props.name}
+                {this.props.price}
             </div>
         )
     }

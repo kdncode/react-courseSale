@@ -16,14 +16,16 @@ class CourseSale extends Component {
     }
 
     render() {
-        console.log(this.props.items)
         let courses = this.props.items.map((item, index) => {
-            return <Course /> 
+            return <Course name={item.name} price={item.price}
+                key={index} sumPrice={this.sumPrice} active={item.active}/> 
         })
 
         return(
             <div>
-                
+                <h1>Buy courses:</h1>
+                <div id="courses"> { courses }</div>
+                <p id="total">Total: <b>${this.state.total}</b> </p>
             </div>
         )
     }
