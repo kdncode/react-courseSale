@@ -22,7 +22,7 @@ class CourseSale extends Component {
         })
 
         return(
-            <div>
+            <div id="wrapper">
                 <h1>Buy courses:</h1>
                 <div id="courses"> { courses }</div>
                 <p id="total">Total: <b>${this.state.total}</b> </p>
